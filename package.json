@@ -1,6 +1,6 @@
 {
   "name": "x-influxdb",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "dependencies": {
     "influx-json2line": "0.0.1",

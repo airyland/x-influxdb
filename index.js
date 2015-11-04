@@ -20,8 +20,13 @@ var post = function(server,line){
   });
 }
 
-exports.send = function(server,data){
-  var line = json2line.convert(data);
+exports.send = function(server,data,setTag){
+  var line = '';
+  if(setTag){
+      var line = json2line.convert(data,[json2line.SET_DATE_AS_TAG,json2line.SET_HOUR_AS_TAG]);
+  }else{
+    var line = json2line.convert(data);
+  }
   queue.add(function(){
     post(server,line);
   });
