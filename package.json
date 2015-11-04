@@ -1,0 +1,10 @@
+{
+  "name": "x-influxdb",
+  "version": "0.0.1",
+  "main": "index.js",
+  "dependencies": {
+    "influx-json2line": "0.0.1",
+    "rate-limit": "^0.1.1",
+    "requestretry": "^1.5.0"
+  }
+}
